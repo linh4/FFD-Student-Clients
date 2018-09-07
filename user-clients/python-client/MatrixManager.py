@@ -7,7 +7,7 @@ class MatrixManager:
         self.api_url = "http://localhost:3001"
 
 
-    def get_tile(self, dict):
+    def get_tile(self, dic):
         # Tested, working
         get_tile_url = self.api_url + "/get-tile?x=" + str(dict["x"]) + "&y=" + str(dict["y"])
         response = requests.get(get_tile_url)
@@ -34,11 +34,11 @@ class MatrixManager:
         return data
 
 
-    def set_tile(self, dict):
+    def set_tile(self, dic):
         # Tested, working
         set_tile_url = self.api_url + "/set-tile"
-        dict.update({"id": self.id})
-        response = requests.post(set_tile_url, data=dict)
+        dic.update({"id": self.id})
+        response = requests.post(set_tile_url, data=dic)
         data = response.json()
 
         return data
