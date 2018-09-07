@@ -9,7 +9,7 @@ class MatrixManager:
 
     def get_tile(self, dic):
         # Tested, working
-        get_tile_url = self.api_url + "/get-tile?x=" + str(dict["x"]) + "&y=" + str(dict["y"])
+        get_tile_url = self.api_url + "/get-tile?x=" + str(dic["x"]) + "&y=" + str(dic["y"])
         response = requests.get(get_tile_url)
         data = response.json()
 
