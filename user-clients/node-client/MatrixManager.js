@@ -37,7 +37,7 @@ class MatrixManager {
         'Content-Type': 'application/json'
       },
       method: "POST",
-      body: JSON.stringify({...obj, id: this.id})
+      body: JSON.stringify(Object.assign(obj, {id: this.id})
     }
 
     return fetch(set_tile_url, options)
