@@ -1,6 +1,3 @@
-
-
-require 'pry-nav'
 require_relative "./MatrixManager.rb"
 
 team_id = "Jon"
