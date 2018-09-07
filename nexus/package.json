@@ -1,0 +1,26 @@
+{
+	"name": "nexus",
+	"version": "1.0.0",
+	"description": "Nexus(TM)",
+	"main": "app.js",
+	"scripts": {
+		"test": "",
+		"start": "node app.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/learn-co-students/FFD-Student-Clients.git"
+	},
+	"keywords": [
+		"Nexus"
+	],
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/learn-co-students/FFD-Student-Clients/issues"
+	},
+	"homepage": "https://github.com/learn-co-students/FFD-Student-Clients#readme",
+	"dependencies": {
+		"nexus-ffd": "^1.1.0"
+	}
+}
