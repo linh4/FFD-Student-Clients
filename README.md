@@ -38,14 +38,6 @@ CONNECTED
 
 in your terminal. Leave this terminal window running in a background. Easy!
 
-**Note** Keep an eye on the terminal. If at any point, you see
-
-```
-Socket closed
-```
-
-in your terminal, simply close the server and run `npm start` again.
-
 ### User Clients
 
 So that everyone can participate regardless of language preference, we've written clients in Ruby, JavaScript, and Python.
