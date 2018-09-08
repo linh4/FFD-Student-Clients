@@ -7,38 +7,30 @@ class MatrixManager:
         self.api_url = "http://localhost:3001"
 
 
-    def get_tile(self, dic):
-        # Tested, working
-        get_tile_url = self.api_url + "/get-tile?x=" + str(dic["x"]) + "&y=" + str(dic["y"])
-        response = requests.get(get_tile_url)
+    def get_tile(self, x, y):
+        response = requests.get(f"{self.api_url}/get-tile?x={x}&y={y}")
         data = response.json()
 
         return data
 
 
     def get_queue(self):
-        # Tested, working
-        get_queue_url = self.api_url + "/get-queue"
-        response = requests.get(get_queue_url)
+        response = requests.get(f"{self.api_url}/get-queue")
         data = response.json()
 
         return data
 
 
     def clear_queue(self):
-        # Tested, working
-        clear_queue_url = self.api_url + "/clear-queue"
-        response = requests.delete(clear_queue_url)
+        response = requests.delete(f"{self.api_url}/clear-queue")
         data = response.json()
 
         return data
 
 
-    def set_tile(self, dic):
-        # Tested, working
-        set_tile_url = self.api_url + "/set-tile"
-        dic.update({"id": self.id})
-        response = requests.post(set_tile_url, data=dic)
+    def set_tile(self, x, y, c):
+        dic = {"x": x, "y": y, "c": c, "id": self.id}
+        response = requests.post(f"{self.api_url}/set-tile", data=dic)
         data = response.json()
 
         return data

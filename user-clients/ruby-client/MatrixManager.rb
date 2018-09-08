@@ -48,8 +48,6 @@ class MatrixManager
     response = RestClient.get(get_tile_url)
     JSON.parse(response)
   end
-
-
-
+  
 
 end
