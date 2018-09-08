@@ -24,6 +24,6 @@
 	},
 	"homepage": "https://github.com/learn-co-students/FFD-Student-Clients#readme",
 	"dependencies": {
-		"nexus-ffd": "^1.3.0"
+		"nexus-ffd": "^1.3.2"
 	}
 }

@@ -1,8 +1,6 @@
 const { MatrixManager } = require('./MatrixManager.js')
 
-var teamID = "Enter your team id here! (INTEGER)"
-
-const matrix = new MatrixManager(teamID)
+const matrix = new MatrixManager()
 
 
 // Write your code here!
