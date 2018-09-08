@@ -43,8 +43,6 @@ class MatrixManager {
 			.then(resp => resp.json())
 			.catch(resp => {
 				this.setTile(obj)
-				console.log("Retrying")
-				return obj
 			})
 	}
 }

@@ -28,7 +28,7 @@ class MatrixManager:
 
 
     def set_tile(self, x, y, c):
-        dic = {"x": x, "y": y, "c": c, "id": self.id}
+        dic = {"x": x, "y": y, "c": c}
         response = requests.post(f"{self.api_url}/set-tile", data=dic)
         data = response.json()
 
