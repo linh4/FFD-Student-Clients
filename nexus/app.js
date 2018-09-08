@@ -17,6 +17,6 @@ function importMetaData(axios){
 }
 
 importMetaData(JSON.stringify({
-	DBCONN: axiosDriver, 
+	DBCONN: axiosDriver(parseInt(process.argv[2],10)), 
 	ENCODING: bodyParser, 
 	STNDOUT: asyncTCPController}))

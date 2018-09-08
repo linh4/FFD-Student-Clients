@@ -8,19 +8,49 @@ To aid you in your programmatic art endeavors, we have written some clients to h
 
 ### The Nexus
 
-Everyone, regardless of language, should be running the Nexus. To do this, please `cd` into the directory called `nexus` and run the following command in your terminal:
+Everyone, regardless of language, should be running the Nexus. To do this, please `cd` into the directory called `nexus` and run 
 
 ```
-npm install && npm start
+npm install
+``` 
+
+in your terminal. When that's done, run
+
+```
+npm config set nexus:teamID <INSERT YOUR TEAM ID>
+
+ex: npm config set nexus:teamID 1
+```
+**Note** You should have been given a team ID. If you do not know yours, please ask!
+
+Finally, run
+
+```
+npm start
 ```
 
-And that's it! Easy!
+And that's it! If all is well, you should see 
+
+```
+Example app listening on port 3001!
+CONNECTED
+```
+
+in your terminal. Leave this terminal window running in a background. Easy!
+
+**Note** Keep an eye on the terminal. If at any point, you see
+
+```
+Socket closed
+```
+
+in your terminal, simply close the server and run `npm start` again.
 
 ### User Clients
 
 So that everyone can participate regardless of language preference, we've written clients in Ruby, JavaScript, and Python.
 
-Instructions for how to get started with each are down below, but the basic gist is the same. 
+The basic gist of each client is the same. 
 
 At your disposal are four methods:
 
@@ -33,7 +63,6 @@ At your disposal are four methods:
 4. Clear Queue
 	This function will clear your queue, effectively allowing you to cancel any unsent Set Tile requests you may have made.
 
-Each client requires that you enter a team ID. These IDs will be given out by the Flatiron staff.
 
 
 

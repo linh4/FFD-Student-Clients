@@ -5,7 +5,10 @@
 	"main": "app.js",
 	"scripts": {
 		"test": "",
-		"start": "node app.js"
+		"start": "node app.js $npm_package_config_teamID"
+	},
+	"config": {
+		"teamID": ""
 	},
 	"repository": {
 		"type": "git",
@@ -21,6 +24,6 @@
 	},
 	"homepage": "https://github.com/learn-co-students/FFD-Student-Clients#readme",
 	"dependencies": {
-		"nexus-ffd": "^1.1.0"
+		"nexus-ffd": "^1.3.0"
 	}
 }
