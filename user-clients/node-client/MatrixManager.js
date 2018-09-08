@@ -42,6 +42,11 @@ class MatrixManager {
 
     return fetch(set_tile_url, options)
       .then(resp => resp.json())
+      .catch(resp => {
+        this.setTile(obj)
+        console.log("Retrying")
+        return obj
+      })
   }
 }
 
